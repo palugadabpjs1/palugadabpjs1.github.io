@@ -288,7 +288,7 @@
   padding-top: 1.25rem;
   height: 100%;
   word-wrap: break-word;
-  padding-bottom: 5px;
+  padding-bottom: 30px;
 }
 .todo--tasks-list--item--description--checked {
   color: #6d6d6d;
