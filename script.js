@@ -79,20 +79,6 @@ class App {
             this._addNewTask();
     }
 
-    _setBackground(method) {
-        let currentHour = 0;
-
-        if (method === 'automatic') {
-            currentHour = new Date().getHours();
-        } else if (method === 'morning') {
-            currentHour = 7;
-        } else if (method === 'afternoon') {
-            currentHour = 12;
-        } else if (method === 'night') {
-            currentHour = 19;
-        }
-    }
-
     _lineThroughText(i) {
         const itemToLineThrough = Array.from(document.querySelectorAll('.todo--tasks-list--item--description'));
         itemToLineThrough[i].classList.toggle('todo--tasks-list--item--description--checked');
@@ -216,7 +202,6 @@ class App {
     }
 
     _init() {
-        this._setBackground('automatic');
         this._displayTasks();
         this._setHeaderDate();
     }
